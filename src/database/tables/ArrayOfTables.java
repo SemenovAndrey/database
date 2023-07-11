@@ -87,9 +87,7 @@ public class ArrayOfTables {
     }
 
     public void displayAllTables() {
-        for (Table table : tables) {
-            table.display();
-        }
+        tables.forEach(table -> table.display());
         System.out.println();
     }
 
@@ -213,9 +211,7 @@ public class ArrayOfTables {
 
     private void displayInfoAboutAllTables() {
         System.out.println("Tables:");
-        for (Table table : tables) {
-            System.out.println(table.toString());
-        }
+        tables.forEach(table -> System.out.println(table.toString()));
     }
 
     public boolean checkNumberOfTheTables() {
